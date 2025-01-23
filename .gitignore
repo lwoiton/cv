@@ -1,0 +1,8 @@
+# LaTeX specific files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.pdf
