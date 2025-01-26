@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNH}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-1pt}\item%
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-5pt}%
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListStartBullets}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\usepackage{array}
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{38}{47}} 
+\newcolumntype{L}{>{\hb@xt@\z@\bgroup}l<{\hss\egroup}}
+\newcolumntype{C}{>{\centering\arraybackslash}c}
+\newcolumntype{R}{>{\hb@xt@\z@\bgroup\hss}r<{\egroup}}
+\makeatother
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{L@{\extracolsep{\fill}}C@{\extracolsep{\fill}}R}
+    \href{mailto:luca-andre.woiton@airbus.com}{luca-andre.woiton@airbus.com} &
+    \multirow{2}{*}{\Huge \textbf{Luca Woiton}} &
+    \href{https://www.linkedin.com/in/lwoiton/}{in/lwoiton/} \\
+    +49 (0) 1575 5511893 & &
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Berufserfahrung}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Gewichtsingenieur - Airbus Operations GmbH}{Bremen}
+{Vollzeit}{Okt. 2021 -- Mai 2023}
+\resumeItemListStart
+\resumeItemNH{Entwicklung von Python- und Google Apps Script-Tools für Gewichtsberechnungen und Datenbankmanagement}
+\resumeItemNH{Erstellung eines umfassenden Massenmodells für die A321XLR-Flugtestkampagne, ausgezeichnet mit AIRward}
+\resumeItemNH{Optimierung der Datenbankgranularität durch semi-automatisierte Ausrüstungserfassung}
+\resumeItemNH{Technische Beratung zu Gewichtsauswirkungen abteilungsübergreifend}
+\resumeItemNH{Verwaltung und Analyse komplexer Flugzeugmodifikationsdaten im funktionsübergreifenden Team}
+\resumeItemListEnd
+
+\resumeSubheading
+{Duales Studium - Airbus Operations GmbH}{Bremen}
+{Studium \& Ausbildung}{Sep. 2017 -- Okt. 2021}
+\resumeItemListStart
+\resumeItemNH{Rotation durch zentrale Luftfahrtbereiche: Einkauf, Fertigung, Werkstoffe \& Verfahren}
+\resumeItemNH{Entwicklung von MATLAB/Simulink-Modellen für mechanische Systeme und Automatisierungsprozesse}
+\resumeItemNH{Kombination aus Ingenieurstudium und IHK-zertifizierter Fluggerätemechanikerausbildung}
+\resumeItemNH{Leitung abteilungsübergreifender Projektteams bei gleichzeitigem akademischen Erfolg}
+\resumeItemListEnd
+
+%-----------EDUCATION-----------------
+\section{Ausbildung}
+\resumeSubHeadingListStart
+\resumeSubheading
+{42 Prag}{Prag, Tschechien}
+{Softwareentwicklung}{Jan. 2023 -- Apr. 2025}
+\resumeItemListStart
+\resumeItem{Schwerpunkte}{Systemprogrammierung (C/C++), Datenstrukturen \& Algorithmen, Netzwerkprogrammierung, Peer Learning}
+\resumeItemListEnd
+
+\resumeSubheading
+{HSB Hochschule Bremen}{Bremen}
+{B.E. Maschinenbau und Produktionstechnik}{Sep. 2017 -- Okt. 2021}
+\resumeItemListStart
+\resumeItem{Thesis}{MBSE-Framework-Entwicklung für Flügelmassenabschätzung mit moderner Softwarearchitektur}
+\resumeItem{Projekte}{Mechatronische Systemmodellierung, Industrielle Oberflächenbehandlungsstudie, Arduino-basierte Steuerungssysteme}
+\resumeItem{Technischer Fokus}{Ingenieurgrundlagen, CAD/CAM, MATLAB/Simulink, Messtechnik}
+\resumeItemListEnd
+
+%-----------PROJECTS-----------------
+\section{Technische Projekte}
+\resumeSubHeadingListStartBullets
+\resumeSubItem{Unix Shell \& HTTP Server}
+{Entwicklung einer POSIX-konformen Shell in C und eines nebenläufigen HTTP/1.1-Servers in C++ mit robuster Fehlerbehandlung}
+\resumeSubItem{3D Raycasting Engine}
+{Entwicklung einer optimierten Grafikengine mit Texturmapping und Kollisionserkennung}
+\resumeSubItem{Sprachlern-Automatisierung}
+{Erstellung eines Systems zur Integration von PDF-Parsing, REST-APIs und OpenAI für automatisierte Lernmaterialien}
+\resumeSubItem{Technische Simulation}
+{Entwicklung eines Federpendel-Analysesystems mit MATLAB/Simulink zur Vorhersage mechanischen Verhaltens}
+\resumeSubHeadingListEnd
+
+%-----------INVOLVEMENT-----------------
+\section{Berufliches Engagement}
+\resumeSubHeadingListStartBullets
+\resumeSubItem{Technischer Beirat}
+{Leitung von Azubi-Vereinsprojekten und Organisation von Weiterbildungsveranstaltungen}
+\resumeSubItem{Fachschaft Maschinenbau}
+{Mentoring für Erstsemester und Unterstützung akademischer Initiativen}
+\resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Kompetenzen}
+\resumeSubHeadingListStart
+\resumeSubItem{Programmierung}{C, C++, Python, JavaScript, Google Apps Script, MATLAB/Simulink}
+\resumeSubItem{Technologien}{Git, Unix/Linux, Node.js, React, SQL, MongoDB, Docker, REST APIs}
+\resumeSubItem{Ingenieurwesen}{CAD/CAM, Massenproperties, Flugzeugsysteme, Fertigungsprozesse}
+\resumeSubItem{Soft Skills}{Funktionsübergreifende Teamleitung, Technische Beratung, Projektmanagement, Peer-Mentoring, Interkulturelle Zusammenarbeit}
+\resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{Auszeichnungen}
+\resumeSubHeadingListStartBullets
+\resumeSubItem{AIRward}
+{Herausragende technische Beiträge zur A321XLR-Flugtestkampagne bei Airbus}
+\resumeSubHeadingListEnd
+
+%---------------------------------
+\end{document}

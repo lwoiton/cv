@@ -1,0 +1,120 @@
+\documentclass[a4paper,11pt]{article}
+
+% Required packages for German-style CV
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% Define custom colors
+\definecolor{primary}{RGB}{0, 60, 113}  % Professional blue tone
+\definecolor{secondary}{RGB}{128, 128, 128}  % Subtle grey
+
+% Custom commands for consistent formatting
+\newcommand{\cvheader}[5]{
+    \begin{minipage}[t]{0.7\textwidth}
+        {\LARGE\textbf{#1}}\\[0.3em]
+        {\large #2}\\[0.3em]
+        \faEnvelope\ #3\\
+        \faPhone\ #4\\
+        \faMapMarker\ #5
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+        \raggedleft
+        % Placeholder for photo (common in German CVs)
+        \framebox[3.5cm]{\parbox[t][4.5cm]{3.5cm}{\centering Foto}}
+    \end{minipage}
+}
+
+% Section formatting (German style)
+\titleformat{\section}
+{\Large\bfseries\color{primary}}
+{}{0em}
+{}[\vspace{-0.8em}\rule{\textwidth}{0.4pt}]
+
+% Custom command for employment/education entries
+\newcommand{\cventry}[4]{
+    \textbf{#1} & #2 & \textbf{#3} & #4 \\
+}
+
+\begin{document}
+
+% Personal Information (Persönliche Daten)
+\cvheader{Vorname Nachname}
+{Softwareentwickler \& Luftfahrtingenieur}
+{email@example.com}
+{+49 123 456789}
+{PLZ Stadt, Deutschland}
+
+\vspace{1cm}
+
+% Profile Summary (Profil)
+\section{Profil}
+\vspace{0.3cm}
+Software- und Luftfahrtingenieur mit fundiertem Hintergrund in der Luftfahrtindustrie und Softwareentwicklung. Erfahrung in der Massenanalyse bei Airbus sowie intensive Programmierausbildung an der 42Prague. Kombination aus technischem Verständnis und Softwareentwicklungskompetenz.
+
+% Professional Experience (Berufserfahrung)
+\section{Berufserfahrung}
+\vspace{0.3cm}
+\begin{tabularx}{\textwidth}{@{}p{4.2cm}@{}X@{}}
+\textbf{seit MM.YYYY} & \textbf{Mass Properties Engineer}, Airbus\\
+& \begin{itemize}[leftmargin=*,nosep]
+  \item Verantwortlich für [spezifische Aufgaben]
+  \item Entwicklung von [relevante Tools/Prozesse]
+  \item Optimierung von [wichtige Erfolge]
+\end{itemize}\\[0.2cm]
+\end{tabularx}
+
+% Education (Ausbildung)
+\section{Ausbildung}
+\vspace{0.3cm}
+\begin{tabularx}{\textwidth}{@{}p{4.2cm}@{}X@{}}
+\textbf{MM.YYYY -- MM.YYYY} & \textbf{42Prague}\\
+& Intensive Softwareentwicklungsausbildung\\
+& Schwerpunkte: C, C++, Python, Unix, Algorithmen\\[0.2cm]
+
+\textbf{MM.YYYY -- MM.YYYY} & \textbf{Bachelor of Engineering}\\
+& Duales Studium bei Airbus\\
+& Maschinenbau und Produktionstechnik\\
+& Abschlussarbeit: [Titel der Thesis]
+\end{tabularx}
+
+% Technical Skills (Fachkenntnisse)
+\section{Fachkenntnisse}
+\vspace{0.3cm}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Programmierung:} & C, C++, Python, [weitere relevante Sprachen]\\[0.2cm]
+\textbf{Luftfahrt:} & Mass Properties, [weitere relevante Kenntnisse]\\[0.2cm]
+\textbf{Tools \& Methoden:} & Git, Linux, [weitere Tools]\\[0.2cm]
+\textbf{Sprachen:} & Deutsch (Muttersprache), Englisch (Verhandlungssicher)
+\end{tabularx}
+
+% Projects (Projekte)
+\section{Projekte}
+\vspace{0.3cm}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{[Projektname]} -- [Kurze Beschreibung]
+    \begin{itemize}
+        \item Technologien: [verwendete Technologien]
+        \item Ergebnis: [messbare Erfolge]
+    \end{itemize}
+\end{itemize}
+
+% Additional Qualifications (Zusatzqualifikationen)
+\section{Zusatzqualifikationen}
+\vspace{0.3cm}
+\begin{itemize}[leftmargin=*]
+    \item [Relevante Zertifizierungen]
+    \item [Weiterbildungen]
+    \item [Besondere Auszeichnungen]
+\end{itemize}
+
+\end{document}
